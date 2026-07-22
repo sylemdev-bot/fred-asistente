@@ -1,4 +1,4 @@
-# Fred 🎙️
+Fred V2 🎙️
 
 **[Español](#español) | [English](#english)**
 
@@ -12,7 +12,7 @@ Empezó como un experimento de fin de semana y se ha ido convirtiendo en algo ba
 
  ![Fred](assets/perfil.png) 
 
-
+ https://github.com/user-attachments/assets/c863c241-6576-440b-9ff4-894b4de48efa
  
 # ¿Qué hace Fred?
 
@@ -132,7 +132,7 @@ It started as a weekend experiment and has grown into something a lot more compl
 
  ![Fred](assets/perfil.png) 
 
-
+https://github.com/user-attachments/assets/e2f7df1b-068e-47e2-9fd8-7784e1dbe7b0
  
 ### What Fred can do
 
