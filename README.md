@@ -6,9 +6,10 @@ Fred V2 🎙️
 
 ## Español
 
-Fred es mi asistente de voz personal, estilo mayordomo (piensa en Jarvis, pero hecho en casa con Python). Le hablo, me responde, hace cosas en mi compu, lee lo que tengo en pantalla y me lo explica, y hasta me ayuda a redactar textos completos basándose en lo que hemos visto juntos.
+Fred es un asistente de voz personal, estilo mayordomo hecho en casa con Python Le puedo hablar y me responde, hace cosas en mi computadora, lee lo que tengo en pantalla y me lo explica, y hasta me ayuda a redactar textos completos basándose en lo que hemos visto juntos.
 
-Empezó como un experimento de fin de semana y se ha ido convirtiendo en algo bastante más completo. Este README explica todo lo que hace hoy y cómo ponerlo a correr.
+Empezó como un experimento de fin de semana y se ha ido convirtiendo en algo bastante más completo. Yo tenia problemas con el SAT exam y quise crear algo que solucionara ese problema con un asistente que te ayude y este pendiente de ti, ya que esta idea me llamo la atencion en peliculas y porque no hacerlo realidad.
+Este README explica todo lo que hace hoy y cómo ponerlo a correr.
 
  ![Fred](assets/perfil.png) 
 
@@ -125,9 +126,9 @@ Este proyecto es parte de lo que hago en **Sylem**, mi estudio donde desarrollo 
 
 ## English
 
-Fred is my personal voice assistant, butler-style (think Jarvis, but homemade with Python). I talk to it, it talks back, it does things on my computer, reads what's on my screen and explains it to me, and even helps me write full pieces of writing based on what we've looked at together.
+Fred is a personal voice assistant, made with Python. I talk to it, it talks back, it does things on my computer, reads what's on my screen and explains it to me, and even helps me write full pieces of writing based on what we've looked at together.
 
-It started as a weekend experiment and has grown into something a lot more complete. This README covers everything it does today and how to get it running.
+It started as a weekend experiment and has become something much more complete. I had problems with the SAT exam and I wanted to create something that would solve that problem with an assistant to help you and be aware of you, since this idea caught my attention in movies and why not make it a reality.. This README covers everything it does today and how to get it running.
 
 
  ![Fred](assets/perfil.png) 
