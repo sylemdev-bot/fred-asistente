@@ -1,8 +1,4 @@
 # -- coding: utf-8 --
-# =========================================================
-#   FRED  -  Tu asistente personal por voz (estilo Jarvis)
-#   Con interfaz visual (orbe), pausa de micrófono y charla abierta
-# =========================================================
 import os
 import json
 import asyncio
@@ -20,7 +16,6 @@ import requests
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# ----------------- CONFIGURACIÓN -----------------
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 NOMBRE = "Fred"
@@ -28,14 +23,10 @@ VOZ = "es-MX-JorgeNeural"
 ARCHIVO_MEMORIA = "memoria.json"
 MODELO = "gemini-flash-latest"
 
-# Rutas de apps de escritorio. Xbox y Steam usan protocolos que Windows
-# reconoce directo. Unity Hub varía según instalación: ajusta la ruta
-# de abajo a donde esté instalado en TU compu si el comando no funciona.
 RUTA_UNITY_HUB = r"C:\Program Files\Unity Hub\Unity Hub.exe"
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# ----------------- MEMORIA (te conoce) -----------------
 def cargar_memoria():
     if os.path.exists(ARCHIVO_MEMORIA):
         with open(ARCHIVO_MEMORIA, "r", encoding="utf-8") as f:
@@ -48,7 +39,6 @@ def guardar_memoria(mem):
 
 memoria = cargar_memoria()
 
-# ----------------- PERSONALIDAD -----------------
 PERSONALIDAD = f"""
 Eres {NOMBRE}, el asistente personal por voz del señor.
 Hablas SIEMPRE en español, con un tono cálido, cercano y elegante.
@@ -85,7 +75,6 @@ modelo = genai.GenerativeModel(MODELO, system_instruction=PERSONALIDAD,
                                 safety_settings=SAFETY_SETTINGS)
 chat = modelo.start_chat(history=[])
 
-# ----------------- INTERFAZ VISUAL (ORBE) -----------------
 class VentanaFred:
     def __init__(self):
         self.ventana = tk.Tk()
@@ -153,7 +142,6 @@ class VentanaFred:
 
 ui = VentanaFred()
 
-# ----------------- VOZ (TTS) -----------------
 pygame.mixer.init()
 
 async def _generar(texto, ruta):
@@ -171,7 +159,6 @@ def hablar(texto):
     pygame.mixer.music.unload()
     ui.set_hablando(False, "En espera...")
 
-# ----------------- OÍDO (STT) -----------------
 reconocedor = sr.Recognizer()
 mic = sr.Microphone()
 
@@ -198,7 +185,6 @@ def escuchar():
     except Exception:
         return ""
 
-# ----------------- ACCIONES -----------------
 def ejecutar_accion(cmd):
     if "youtube" in cmd:
         webbrowser.open("https://youtube.com")
@@ -269,7 +255,6 @@ def ejecutar_accion(cmd):
 
     return False
 
-# ----------------- CEREBRO (IA) -----------------
 def responder(cmd):
     prompt = f"{contexto_memoria()}\n\nEl señor dijo: {cmd}"
     texto = None
@@ -288,7 +273,6 @@ def responder(cmd):
             break
     hablar(texto)
 
-# ----------------- BUCLE PRINCIPAL (en segundo plano) -----------------
 def bucle_fred():
     hablar(f"A sus órdenes, señor. {NOMBRE} está despierto.")
     while True:
