@@ -1,0 +1,5 @@
+venv/
+.env
+memoria.json
+_pycache_/
+*.mp3
