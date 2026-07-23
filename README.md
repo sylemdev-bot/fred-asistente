@@ -13,8 +13,7 @@ Empezó como un experimento de fin de semana y se ha ido convirtiendo en algo ba
  ![Fred](assets/perfil.png) 
 
 
- ![Demo de Fred](assets/demo.mp4) 
-
+ 
 # ¿Qué hace Fred?
 
 **Conversación natural**
@@ -134,8 +133,7 @@ It started as a weekend experiment and has grown into something a lot more compl
  ![Fred](assets/perfil.png) 
 
 
- ![Fred demo](assets/demo.mp4) 
-
+ 
 ### What Fred can do
 
 **Natural conversation**
